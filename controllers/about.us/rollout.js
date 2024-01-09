@@ -1,5 +1,4 @@
 const Rollout = require("../../models/about-us/rollout");
-const RolloutText = require("../../models/about-us/rollout.text");
 const cloudinary = require("../../utils/cloudinary");
 
 exports.addRolloutImg = async (req, res) => {

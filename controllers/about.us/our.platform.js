@@ -1,3 +1,4 @@
+const cloudinary = require("../../utils/cloudinary");
 const OurPlatform = require("../../models/about-us/our.platform");
 
 exports.addOurPlatform = async (req, res) => {

@@ -1,3 +1,4 @@
+const cloudinary = require("../../utils/cloudinary");
 const OurInfrastructure = require("../../models/about-us/our.infrastructure");
 
 exports.addOurInfrastructure = async (req, res) => {
