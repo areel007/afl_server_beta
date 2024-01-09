@@ -1,4 +1,4 @@
-const OurPlatformText = require("../../models/about-us/our.Platform.text");
+const OurPlatformText = require("../../models/about-us/our.platform.text");
 
 exports.addOurPlatformText = async (req, res) => {
   try {

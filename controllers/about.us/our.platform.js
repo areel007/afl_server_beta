@@ -1,4 +1,4 @@
-const OurPlatform = require("../../models/about-us/our.infrastructure");
+const OurPlatform = require("../../models/about-us/our.platform");
 
 exports.addOurPlatform = async (req, res) => {
   try {
