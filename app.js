@@ -68,7 +68,11 @@ app.use(
   ourInfrastructure
 );
 app.use("/api/v1/about-us/our-infrastructure-text", ourInfrastructureText);
-app.use("/api/v1/about-us/our-platform", ourPlatform);
+app.use(
+  "/api/v1/about-us/our-platform",
+  upload.single("ourPlatformImg"),
+  ourPlatform
+);
 app.use("/api/v1/about-us/our-platform-text", ourPlatformText);
 app.use("/api/v1/test", testRoute);
 
