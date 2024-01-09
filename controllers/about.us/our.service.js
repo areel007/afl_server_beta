@@ -73,7 +73,7 @@ exports.updateOurServiceImg = async (req, res) => {
     await ourService.save();
 
     res.status(200).json({
-      ourService,
+      ourServiceImg,
     });
   } catch (error) {
     res.status(500).json({
