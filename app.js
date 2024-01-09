@@ -37,6 +37,8 @@ const ourInfrastructure = require("./routes/about.us/our.infrastructure");
 const ourInfrastructureText = require("./routes/about.us/our.infrastructure.text");
 const ourPlatform = require("./routes/about.us/our.platform");
 const ourPlatformText = require("./routes/about.us/our.platform.text");
+const ourService = require("./routes/about.us/our.service");
+const ourServiceText = require("./routes/about.us/our.service.text");
 const testRoute = require("./routes/test");
 
 app.use("/api/v1/auth", validate, authRoute);
@@ -74,6 +76,12 @@ app.use(
   ourPlatform
 );
 app.use("/api/v1/about-us/our-platform-text", ourPlatformText);
+app.use(
+  "/api/v1/about-us/our-service",
+  upload.single("ourServiceImg"),
+  ourService
+);
+app.use("/api/v1/about-us/our-service-text", ourServiceText);
 app.use("/api/v1/test", testRoute);
 
 module.exports = app;
